@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { WeatherItemComponent } from './weather-item/weather-item.component';
 import { WeatherListComponent } from './weather-list/weather-list.component';
+import {WeatherService} from './weather.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { WeatherListComponent } from './weather-list/weather-list.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
