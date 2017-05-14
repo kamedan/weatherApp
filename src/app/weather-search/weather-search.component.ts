@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-search.component.css']
 })
 export class WeatherSearchComponent implements OnInit {
+  location  ='';
  
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSubmit(value){
-    console.log(value);
+  onSubmit(){
+    console.log(location);
   }
 
 }
